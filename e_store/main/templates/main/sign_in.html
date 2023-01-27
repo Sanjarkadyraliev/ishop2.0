@@ -1,0 +1,73 @@
+{% load static %}
+<link rel="stylesheet"  href="{% static 'css/login.css' %}">
+<body>
+ <li ><a href="{% url 'main' %}">Home</a></li>
+  <div class="signin">
+    <div class="back-img">
+      <div class="sign-in-text">
+        <div class="active">
+<!--         <a href="{% url 'sign_in' %}">Sign In</a><div>-->
+
+<!--        <div class="nonactive">-->
+<!--         <a href="{% url 'login' %}">Sign Up</a><div>-->
+
+        <form action="" method="post">
+                  {% csrf_token %}
+       <input type="text" class="text" name="username">
+            <span>username</span>
+            <br>
+            <br>
+            <input type="text" class="text" name="password">
+            <span>password</span>
+            <br>
+            <br>
+          <button type="submit">register</button>
+            Sign In
+        </form>
+
+<!--      </div>&lt;!&ndash;/.sign-in-text&ndash;&gt;-->
+<!--      <div class="layer">-->
+<!--      </div>&lt;!&ndash;/.layer&ndash;&gt;-->
+<!--      <p class="point">&#9650;</p>-->
+<!--    </div>&lt;!&ndash;/.back-img&ndash;&gt;-->
+<!--    <div class="form-section">-->
+
+
+<!--      <form action="#">-->
+<!--        &lt;!&ndash;Email&ndash;&gt;-->
+<!--        <div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
+<!--          <input class="mdl-textfield__input" type="email" id="sample3">-->
+<!--          <label class="mdl-textfield__label" for="sample3">Email</label>-->
+<!--          <span class="mdl-textfield__error">Enter a correct Email</span>-->
+<!--        </div>-->
+<!--        <br/>-->
+<!--        <br/>-->
+<!--         &lt;!&ndash;username&ndash;&gt;-->
+<!--        <div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
+<!--          <input class="mdl-textfield__input" type="username" id="sample3">-->
+<!--          <label class="mdl-textfield__label" for="sample3">username</label>-->
+<!--          <span class="mdl-textfield__error">Enter a correct username</span>-->
+<!--        </div>-->
+<!--        <br/>-->
+<!--        <br/>-->
+<!--        &lt;!&ndash;Password&ndash;&gt;-->
+<!--        <div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
+<!--          <input pattern=".{8,}" class="mdl-textfield__input" type="password" id="sample3">-->
+<!--          <label class="mdl-textfield__label" for="sample3">Password</label>-->
+<!--          <span class="mdl-textfield__error">Minimum 8 characters</span>-->
+<!--        </div>-->
+<!--        <br/>-->
+<!--        <p class="forgot-text">Forgot Password ?</p>-->
+<!--        &lt;!&ndash;CheckBox&ndash;&gt;-->
+<!--        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">-->
+<!--        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>-->
+<!--        <span class="keep-text mdl-checkbox__label">Keep me Signed In</span>-->
+<!--      </label>-->
+<!--      </form>-->
+<!--    </div>&lt;!&ndash;/.form-section&ndash;&gt;-->
+
+<!--    <button class="sign-in-btn mdl-button mdl-js-ripple-effect mdl-js-button mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">-->
+<!--      Sign In-->
+<!--    </button>&lt;!&ndash;/button&ndash;&gt;-->
+<!-- </div>&lt;!&ndash;/.signin&ndash;&gt;-->
+<!--</body>-->
